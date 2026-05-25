@@ -118,68 +118,71 @@ body{
     display:flex;
 }
 
-/* TOP */
-
-.top{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:30px;
+/* RESET STRUKTUR BIAR BALIK KE ATAS-BAWAH */
+.top {
+    display: block !important; /* Maksa urutan ke bawah */
+    text-align: left;
+    margin-bottom: 20px;
 }
 
-.logo-box{
-    width:100px; /* Ukuran logo biar pas */
-    display:flex;
-    align-items:center;
-    background:none; /* Ngilangin kotak abu */
-    border:none;     /* Ngilangin garis kotak */
+/* LOGO: TANPA KOTAK, UKURAN PAS */
+.logo-box {
+    width: 100px !important;
+    height: auto !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin-bottom: 10px;
+    display: block !important;
 }
 
-.logo-box img{
-    width:100%;
-    height:auto;
-    display:block;
-    object-fit:contain;
+.logo-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
 }
 
-.brand{
-    text-align:right;
+/* BRAND: TULISAN JACKBALL BILLIARDS */
+.brand {
+    text-align: left !important;
+    margin-bottom: 25px;
 }
 
-.brand h2{
-    font-size:22px;
-    color:#ffd8a8;
-    font-weight:700;
+.brand h2 {
+    font-size: 22px;
+    color: #ffd8a8;
+    font-weight: 700;
+    margin: 0;
 }
 
-.brand p{
-    font-size:11px;
-    letter-spacing:4px;
-    opacity:0.7;
+.brand p {
+    font-size: 10px;
+    letter-spacing: 3px;
+    opacity: 0.7;
+    margin: 0;
 }
 
-/* HERO */
-
-.tag{
-    display:inline-flex;
-    align-self:flex-start;
-    padding:10px 18px;
-    border-radius:999px;
-    background:white;
-    color:#222;
-    font-size:11px;
-    letter-spacing:1px;
-    font-weight:700;
-    margin-top:25px; /* JARAK BIAR GAK MEPET LOGO */
-    margin-bottom:28px;
+/* TAG CUSTOMER EXPERIENCE: BIAR GAK NABRAK ATAS */
+.tag {
+    display: inline-flex !important;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: white;
+    color: #222;
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 15px !important; /* Jarak aman dari logo/brand */
+    margin-bottom: 20px;
 }
 
-
-.hero-title{
-    font-size:68px;
-    line-height:0.92;
-    font-weight:800;
-    margin-bottom:24px;
+/* HERO TITLE: YOUR REVIEW MATTER */
+.hero-title {
+    font-size: 56px;
+    line-height: 0.9;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
 }
 
 .hero-desc{
